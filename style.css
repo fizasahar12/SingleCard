@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "karlaBold";
+  src: url(./Karla/static/Karla-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "karlaRegular";
+  src: url(./Karla/static/Karla-Regular.ttf);
+  font-weight: 400;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-rows: 0.6fr 0.6fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container div {
+  /* border: 1px solid red; */
+  padding: 30px;
+}
+.container1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: 1/2;
+  background-color: hsl(0, 0%, 100%);
+  /* border: 2px solid red; */
+}
+.container1a {
+  /* grid-column: 1fr; */
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+ul {
+  list-style: none;
+}
+li {
+  line-height: 17px;
+  font-size: 14px;
+  font-family: "karlaRegular";
+  color: rgb(245, 252, 255);
+  margin-bottom: 2px;
+}
+.container1 h2 {
+  font-family: "karlaBold";
+  margin-bottom: 16px;
+  color: hsl(179, 62%, 43%);
+}
+.container1 h3 {
+  font-family: "karlaRegular";
+  margin-bottom: 10px;
+  color: hsl(71, 73%, 54%);
+}
+.container1 p {
+  font-family: "karlaRegular";
+  color: hsl(218, 22%, 67%);
+}
+.container1b {
+  background-color: hsl(179, 71%, 44%);
+  color: white;
+}
+.container1b h3 {
+  font-family: "karlaRegular";
+  margin-bottom: 15px;
+}
+.container1a h3 {
+  font-family: "karlaBold";
+  margin-bottom: 15px;
+}
+.container1a span {
+  font-family: "karlaBold";
+  font-size: 30px;
+  color: hsl(203, 100%, 97%);
+  margin-right: 10px;
+}
+.para1 {
+  font-family: "karlaRegular";
+  margin-bottom: 10px;
+  color: hsl(205, 27%, 88%);
+}
+.para2 {
+  word-spacing: 1px;
+  font-size: 15px;
+  font-family: "karlaRegular";
+  margin-bottom: 20px;
+  color: white;
+}
+button {
+  font-family: "karlaBold";
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsl(71, 73%, 54%);
+  border-style: none;
+  color: white;
+  font-size: 14px;
+}
